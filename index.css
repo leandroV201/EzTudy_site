@@ -1,0 +1,154 @@
+@font-face{
+    font-family: Overpass;
+    src: url(fonte/Overpass-VariableFont_wght.ttf);
+}
+
+
+
+
+body {
+    height: 98.7vh;
+    width: 98.7vw;
+    margin: 0;
+    background-image: url(https://gradients.mijo-design.com/public/uploads/files/db7.png);
+}
+
+header{
+    
+    background-color: #040707;
+    width: 100%;
+    height: 14%;
+    display: flex;
+    align-items: center;
+}
+
+h4 {
+    font-family: Overpass;
+    color: white;
+    
+}
+.figura{
+    position: absolute;
+    top: 25px;
+    grid-area: figura;
+    padding-left: 90px;
+    
+}
+
+nav {
+    background-color: #040707;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 50px;
+    width: 70%;
+}
+nav h4{
+    padding-right: 4px;
+    border-right: white solid 2px;
+
+}
+.title {
+    width: auto;
+    
+}
+section{
+    padding-top: 40px;
+    font-family: Overpass;
+    color:rgb(0, 0, 0);
+}
+section h1{
+    font-size: 3rem;
+}
+section h3{
+    font-size: 1.4rem;
+}
+.caixas{
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.aprender{
+    margin-top:150px;
+}
+.materiais{
+    margin-top:100px;
+
+}
+.grupo{
+    margin-top:50px;
+}
+
+.caixinha{
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 240px;
+    border: black solid 1px;
+    border-radius: 25px;
+    background-color: #47C4E0;
+}
+
+.caixinha img {
+    
+    width: 30%;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+section button{
+    margin-top: 20px;
+    margin-left:40px ;
+    font-size: 1rem;
+    color: white;
+    border-radius: 56px;
+    border: black 1px solid;
+    padding:12px 20px 12px 20px ;
+    background-color: #203135;
+}
+
+.box{
+    width: 100%;
+    height: auto;
+    grid-area:box;
+    background: none;
+}
+h1{
+    padding-left: 40px;
+    margin:4px;
+}
+h5{
+    padding-left: 40px;
+    margin:3px;
+}
+.texto{
+    padding-bottom: 7px;
+}
+.playstore{
+    padding-left: 220px;
+    padding-bottom: 30px;
+    grid-area: playstore;
+}
+.appstore{
+    padding-bottom: 0px;
+    padding-top: 200px;
+    padding-left: 210px;
+    grid-area: appstore;
+}
+.produto{
+    display: grid;
+    grid-template-areas: 
+    "appstore"
+    "playstore"
+    ;
+}
