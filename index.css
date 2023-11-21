@@ -2,6 +2,7 @@
     font-family: Overpass;
     src: url(fonte/Overpass-VariableFont_wght.ttf);
 }
+
 @media screen and (min-width:768px) {/*recursividade para tela de tablet e pc, por algum motivo so funcionou com isso*/
     p{
         font-size: 16px;
@@ -42,7 +43,7 @@ section h3{
     width: auto;
 }
 }
-@media screen and (max-width:1190px) {/*tela de tablet apenas*/
+@media screen and (max-width:1450px) {/*tela de tablet apenas*/
     .figura{
         display: none;
 
@@ -96,6 +97,7 @@ section h3{
         width:350px;
     }
     
+    
 }
 body {
     height: 100vh;
@@ -121,8 +123,10 @@ h4 {
     
 }
 .figura{
-    width: 80%;
-    grid-area: figura;
+    width: 225px;
+    position:fixed;
+    top: 180px;
+    right: 430px;
     
 }
 
@@ -212,18 +216,19 @@ section button{
     padding-bottom: 7px;
 }
 .playstore{
-    padding-left: 220px;
+    padding-top: 10px;
+    padding-left: 290px;
     grid-area: playstore;
 }
 .appstore{
+    padding-top: 60%;
     padding-bottom: 0px;
-    padding-left: 210px;
+    padding-left: 280px;
     grid-area: appstore;
 }
 .produto{
     display: grid;
     grid-template-areas: 
-    "figura"
     "appstore"
     "playstore"
     ;
