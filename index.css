@@ -25,6 +25,7 @@ p{
     font-size: 16px;
 }
 h1{
+    
     padding-left: 40px;
     margin:4px;
 }
@@ -43,25 +44,21 @@ section h3{
     width: auto;
 }
 }
-@media screen and (max-width:1450px) {/*tela de tablet apenas*/
+@media screen and (max-width:1023px) {/*tela de tablet apenas*/
     .figura{
         display: none;
 
     }
-    .playstore{/*display none é pra apagar da existencia*/
-        display: none;
 
-    }
-    .appstore{
-        display: none;
-
+    .directione{
+        flex-direction: column;
     }
     .produto{
-        display: none;
+        
+        justify-content: center;
     }
-
-    
 }
+
 @media screen and (max-width:767px) {/*mobile, vulgo meu orgulho*/
     .caixinha{
         margin: 0px;
@@ -106,13 +103,18 @@ body {
     background-image: url(images/back.png);
     background-position: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.black-box{
+    width: 100%;
+    height: 110px;
 }
 
 header{
     background-color: #040707;
     width: 100%;
     height: 14%;
+    position: fixed;
     display: flex;
     align-items: center;
 }
@@ -123,10 +125,9 @@ h4 {
     
 }
 .figura{
+    margin-left: 80px;
     width: 225px;
-    position:fixed;
-    top: 180px;
-    right: 430px;
+    grid-area: figura;
     
 }
 
@@ -139,9 +140,12 @@ nav {
     width: 80%
 }
 nav h4{
-    padding-right: 4px;
+    padding-right: 13px;
     border-right: white solid 2px;
 
+}
+.directione{
+    display: flex;
 }
 .title {
     width: auto;
@@ -163,6 +167,7 @@ section h3{
     font-size: 1.4rem;
 }
 .caixas{
+    margin-left: 100px;
     display: flex;
     gap: 5px;
     margin-bottom: 20px;
@@ -216,19 +221,20 @@ section button{
     padding-bottom: 7px;
 }
 .playstore{
-    padding-top: 10px;
-    padding-left: 290px;
+    margin-left: 10px;
     grid-area: playstore;
 }
 .appstore{
-    padding-top: 60%;
-    padding-bottom: 0px;
-    padding-left: 280px;
+    
     grid-area: appstore;
 }
 .produto{
+    height: 100px;
+    margin-bottom: 0px;
+    margin-left: 45px;
     display: grid;
     grid-template-areas: 
+    "figura"
     "appstore"
     "playstore"
     ;
@@ -254,5 +260,5 @@ a:after {
 }
 
 a:hover:after {
-    width:80%;
+    width:100%;
 }
