@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EzTudy - Faq </title>
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Overpass&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>      
+        <!-- Logo do Site -->
+        <div id = 'logo'>
+        
+        </div>
+        <!-- Titulo do Site -->
+        <div class="title">
+            <img src="images/nome.png" alt="" class="">
+        </div>
+        <!-- Aba de navegação do site, onde servirá de link para as outras páginas -->
+        <nav>
+            <a href="home.html"><h4>Home</h4></a>
+    
+            <a href="#ContactUs"><h4>Contact Us</h4></a>    
+
+            <a href="#Faq"><h4>Faq</h4></a>           
+            
+        </nav>
+    </header>
+    <div class="black-box">
+    </div>
+    <!-- Seção de introdução -->
+    <section>
+        <h5>Perguntas Frequentes</h5>
+        <h2>Tem alguma dúvida? Estamos aqui pra responder<br>
+            Caso sua dúvida não esteja aqui, faça ela no “Contact Us”</h2>
+    </section>
+    <!-- Perguntas e respostas -->
+    <div class="questions">
+        <div class="faq">
+            <button class="botao">
+                O que é o EzTudy?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        <div class="ask">
+            <p>
+                O EzTudy é um aplicativo versátil projetado para simplificar a organização de estudos e tarefas. <br>
+                Com recursos intuitivos, o EzTudy ajuda a manter suas tarefas em dia, definir prazos, criar lembretes e muito mais.
+            </p>
+        </div>
+        </div>
+        <div class="faq">
+            <button class="botao">
+                O EzTudy é só para estudantes?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        <div class="ask">
+            <p>
+                Não, o EzTudy é projetado para atender tanto estudantes quanto profissionais. Seja você um estudante que precisa organizar cronogramas de <br> 
+                estudos ou um profissional que busca gerenciar tarefas e compromissos, o EzTudy oferece uma solução prática e eficiente para organização.
+            </p>
+        </div>
+    </div>
+    <div class="faq">
+        <button class="botao">
+            É preciso pagar pra usar o aplicativo?
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+    <div class="ask">
+        <p>
+            O aplicativo é gratuito e oferece uma variedade de ferramentas eficientes para organização. Para uma experiência ainda mais aprimorada, a versão Premium está disponível, proporcionando acesso a recursos avançados, chat por IA e outras funcionalidades.
+        </p>
+    </div>
+    </div>
+    <div class="faq">
+        <button class="botao">
+            Como ele funciona?
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+    <div class="ask">
+        <p>
+            O EzTudy simplifica a organização de estudos e tarefas. Utilize suas diversas ferramentas gratuitas para uma gestão eficaz. Em uma futura versão Premium, tenha acesso a recursos avançados, incluindo um chat por IA para auxiliar em tarefas e outras funcionalidades.
+        </p>
+    </div>
+    </div>
+    <div class="faq">
+        <button class="botao">
+            Haverá uma versão para desktop?
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+    <div class="ask">
+        <p>
+            Estamos trabalhando diligentemente para disponibilizar em breve a versão para PC do EzTudy, proporcionando uma experiência ainda mais flexível e acessível para nossos usuários. Fique atento às atualizações para obter as últimas informações sobre o lançamento.
+        </p>
+    </div>
+    </div>
+        
+    </div>
+
+    <script>
+
+            var acc = document.getElementsByClassName("botao");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    this.parentElement.classList.toggle("active");
+
+                    var pannel = this.nextElementSibling;
+
+                    if (pannel.style.display === "" || pannel.style.display === "none") {
+                        pannel.style.display = "block";
+                    } else {
+                        pannel.style.display = "none";
+                    }
+                });
+            }
+
+    </script>
+    
+</body>
+</html>

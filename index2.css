@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{ /*todas as notas possiveis pra salvar meus conterraneos estarão aqui*/
+    font-family: Overpass;
+    src: url(fonte/Overpass-VariableFont_wght.ttf);
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-image: url(images/backinvertido.png);
+    background-position: fixed;
+    background-repeat: no-repeat;
+}
+
+.black-box{
+    width: 100%;
+    height: 110px;
+}
+
+header{
+    background-color: #040707;
+    width: 100%;
+    height: 14%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+h4 {
+    font-family: Overpass;
+    color: white;
+    
+}
+
+nav {
+    background-color: #040707;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 50px;
+    width: 80%
+}
+nav h4{
+    font-size: 22px;
+    padding-right: 13px;
+    border-right: white solid 3px;
+
+}
+.directione{
+    display: flex;
+}
+.title {
+    width: auto;
+    margin-left: 1%;
+}
+
+.title img {
+    width: 200px;
+}
+
+section {
+    margin-top: 63px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+    
+}
+
+
+
+h5 {
+    margin: 0;
+    font-size: 43px;
+    font-family: Overpass;
+}
+
+h2 {
+    
+    font-size: 20px;
+    margin: 0;
+    padding-left: 92px;
+    opacity: 63%;
+    font-family: Overpass;
+}
+
+.botao {
+    font-family: 'Overpass', sans-serif;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-style: bold;
+    padding: 2rem 0.5rem;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+
+}
+
+.botao i {
+    font-size: 1.6rem;
+}
+
+.active, .botao:hover {
+    background-color: #f1f7f5;
+}
+
+.questions {
+    max-width: 75%;
+    margin: auto;
+}
+
+.ask {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+}
+
+
+.ask p {
+    font-family: 'Overpass', sans-serif;
+    color:rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    outline: none;
+}
+.faq .aticvate {
+    border: none;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: #12a8f5;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover:after {
+    width:100%;
+}
