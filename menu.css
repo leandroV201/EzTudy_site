@@ -11,18 +11,19 @@
 body{/*definindo tamnho do body*/
     width: 100vw;
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.70);/*background color ficou aqui porque tava com barra branca =/*/
 }
 .corpo{/*esse é o fundo, como body ja foi definido, podemos usar %*/
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.70);
+    
 }
-nav{/*navigator*/
+header{/*navigator*/
     height: 10%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
 }
-nav img{
+header img{
     margin-top: 20px;
     margin-left: 12px;
 }
