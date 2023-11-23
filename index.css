@@ -271,6 +271,14 @@ a:hover:after {
     width:100%;
 }
 /*Fim da home, Inicio da Contact Us*/
+.fundo{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/contactus.png);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 fieldset{
     background-color: rgba(0, 0, 0, 0.017);
     margin-left: 40px;
