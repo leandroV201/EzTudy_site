@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{ /*todas as notas possiveis pra salvar meus conterraneos estarão aqui*/
+    font-family: Overpass;
+    src: url(fonte/Overpass-VariableFont_wght.ttf);
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/back.png);
+    background-position: fixed;
+    background-repeat: no-repeat;
+}
+
+.black-box{
+    width: 100%;
+    height: 110px;
+}
+
+header{
+    background-color: #040707;
+    width: 100%;
+    height: 14%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+h4 {
+    font-family: Overpass;
+    color: white;
+    
+}
+
+nav {
+    background-color: #040707;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 50px;
+    width: 80%
+}
+nav h4{
+    font-size: 22px;
+    padding-right: 13px;
+    border-right: white solid 3px;
+
+}
+.directione{
+    display: flex;
+}
+.title {
+    width: auto;
+    margin-left: 1%;
+}
+
+.title img {
+    width: 200px;
+}
+
+section {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    gap: 10px;
+}
+
+h1 {
+    margin-left: 4%;
+    font-size: 45px;
+    font-family: Overpass;
+}
+
+p {
+    margin-left: 4%;
+    font-size: 19px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+
+h2 {
+    margin-left: 4%;
+    font-family: Overpass;
+}
+
+article {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 23px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: #12a8f5;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover:after {
+    width:100%;
+}
