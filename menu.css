@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{ /*todas as notas possiveis pra salvar meus conterraneos estarão aqui*/
+    font-family: Overpass;
+    src: url(fonte/Overpass-VariableFont_wght.ttf);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.corpo{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.70);
+}
+nav{
+    height: 10%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+nav img{
+    margin-top: 20px;
+    margin-left: 12px;
+}
+.options{
+    margin-top: 100px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: auto;
+}
+.options h4{
+    font-size: 3rem;
+    font-family: overpass;
+    color: white;
+}
+.options a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.options a:after {
+    content: "";
+    position: absolute;
+    background-color: #12a8f5;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.options a:hover:after {
+    width:100%;
+}

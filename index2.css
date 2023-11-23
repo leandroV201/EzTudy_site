@@ -9,6 +9,9 @@
     src: url(fonte/Overpass-VariableFont_wght.ttf);
 }
 @media screen and (min-width:768px) {
+    nav img{
+        display: none;
+    }
     h2{
         padding-left: 92px;
     }
@@ -20,7 +23,9 @@
     }
 }
 @media screen and (max-width:767px) {
-
+    nav h4{
+        display: none;
+    }
     .botao{
         font-size: 1.6rem;
     }
@@ -73,7 +78,6 @@ nav {
     width: 80%
 }
 nav h4{
-    font-size: 22px;
     padding-right: 13px;
     border-right: white solid 3px;
 
@@ -192,3 +196,4 @@ a:after {
 a:hover:after {
     width:100%;
 }
+

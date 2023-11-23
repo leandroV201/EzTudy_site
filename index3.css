@@ -8,13 +8,25 @@
     font-family: Overpass;
     src: url(fonte/Overpass-VariableFont_wght.ttf);
 }
-
-
+@media screen and (min-width:768px) {
+    section{width: 34%;}
+    nav img{
+        display: none;
+    }}
+@media screen and (max-width:767px) {
+    nav h4{
+        display: none;
+    }}
 body {
     height: 100vh;
     width: 100vw;
+    
+}
+.corpo{
+    width: 100%;
+    height: 100%;
     background-image: url(images/back.png);
-    background-position: fixed;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
@@ -69,7 +81,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 35%;
+    
     gap: 10px;
 }
 
