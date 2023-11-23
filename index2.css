@@ -8,15 +8,40 @@
     font-family: Overpass;
     src: url(fonte/Overpass-VariableFont_wght.ttf);
 }
+@media screen and (min-width:768px) {
+    h2{
+        padding-left: 92px;
+    }
+    .botao{
+        font-size: 1.2rem;
+    }
+    .ask p {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:767px) {
 
+    .botao{
+        font-size: 1.6rem;
+    }
+    .ask p {
+        font-size: 1.6rem;
+    }
+}
 
-body {
+.corpo{
+    background-image: url(images/backinvertido.png);
+    background-position: fixed;
+    background-attachment: fixed;
+    width: 100%;
+    height: 120%;
+    
+}
+body {  
     height: 100vh;
     width: 100vw;
     margin: 0;
-    background-image: url(images/backinvertido.png);
-    background-position: fixed;
-    background-repeat: no-repeat;
+    
 }
 
 .black-box{
@@ -86,8 +111,7 @@ h2 {
     
     font-size: 20px;
     margin: 0;
-    padding-left: 92px;
-    opacity: 63%;
+    color: rgba(0, 0, 0, 0.63);
     font-family: Overpass;
 }
 
@@ -96,7 +120,6 @@ h2 {
     background-color: white;
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
-    font-size: 1.2rem;
     width: 100%;
     border: none;
     outline: none;
@@ -134,7 +157,6 @@ h2 {
 .ask p {
     font-family: 'Overpass', sans-serif;
     color:rgba(0, 0, 0, 0.7);
-    font-size: 1.2rem;
     line-height: 1.4;
 }
 
